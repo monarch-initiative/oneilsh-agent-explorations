@@ -1,5 +1,6 @@
 from monarch_agent import MonarchAgent
 from semantic_scholar_agent import SemanticScholarAgent
+from trafil_agent import TrafilAgent
 import agent_smith_ai.streamlit_server as sv
 import streamlit as st
 import os
@@ -76,6 +77,12 @@ sv.initialize_app_config(
 # define a function that returns a dictionary of agents to serve
 def get_agents():
     return {
+        "Web Agent": {
+            "agent": TrafilAgent("Web Agent", model="gpt-3.5-turbo-16k-0613"),
+            "greeting": "Hello, I'm an assistant that can read web pages.",
+            "avatar": "🧑🏻‍💻",
+            "user_avatar": "👤",
+        },
         "Semantic Scholar": {
             "agent": SemanticScholarAgent("Semantic Scholar", model="gpt-3.5-turbo-16k-0613"),
             "greeting": "Hello, I'm the Semantic Scholar Assistant.",
