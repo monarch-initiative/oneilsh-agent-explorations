@@ -110,8 +110,6 @@ class SemanticScholarAgent(UtilityAgent):
 
         df = pd.DataFrame(reslist)
         self.send_to_ui(df)
-        # markdown_table = tabulate(df, headers='keys', tablefmt='pipe', showindex=False)
-        # print(markdown_table)
-        # print(df.count)
+
 
         return reslist
