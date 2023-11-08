@@ -1,0 +1,101 @@
+{
+    "offset_per_entity_per_counterpart_category": 0,
+    "limit_per_entity_per_counterpart_category": 5,
+    "entities": [
+        {
+          "entity": "MONDO:0017309",
+          "entity_name": "neonatal Marfan syndrome",
+          "original_entity": "Orphanet:284979",
+          "entity_namespace": "MONDO",
+          "entity_category": "biolink:Disease",
+          "entity_closure": [
+            "MONDO:0000001",
+            "MONDO:0018230",
+            ...
+          ],
+          "entity_label": "neonatal Marfan syndrome",
+          "entity_closure_label": [
+            "entity",
+            "continuant",
+            ...
+          ],
+          "entity_taxon": null,
+          "entity_taxon_label": null,
+
+          "associated_categories": [
+            {
+              "total": 1,
+              "counterpart_category": "biolink:Gene",
+              "associations": [
+                {
+                  "id": "uuid:c30c59d2-5d8c-11ee-9b27-2b20ed86a9d9",
+
+                  "counterpart": "HGNC:3603",
+                  "original_counterpart": "NCBIGene:2200",
+                  "counterpart_namespace": "HGNC",
+                  "counterpart_category": "biolink:Gene",
+                  "counterpart_closure": [],
+                  "counterpart_label": "FBN1",
+                  "counterpart_closure_label": [],
+                  "counterpart_taxon": "NCBITaxon:9606",
+                  "counterpart_taxon_label": "Homo sapiens",
+
+                  "counterpart_role": "subject",
+                  "predicate": "biolink:gene_associated_with_condition",
+
+                  "primary_knowledge_source": "infores:orphanet",
+                  "aggregator_knowledge_source": [
+                    "infores:monarchinitiative"
+                  ],
+                  "category": "biolink:CorrelatedGeneToDiseaseAssociation",
+                  "negated": null,
+                  "provided_by": "hpoa_gene_to_disease_edges",
+                  "provided_by_link": {
+                    "id": "hpoa_gene_to_disease",
+                    "url": "https://monarch-initiative.github.io/monarch-ingest/Sources/hpoa/#gene_to_disease"
+                  },
+                  "publications": [],
+                  "qualifiers": [],
+                  "frequency_qualifier": null,
+                  "has_evidence": [],
+                  "onset_qualifier": null,
+                  "sex_qualifier": null,
+                  ... # other association-specific data
+                  "stage_qualifier_closure": [],
+                  "stage_qualifier_closure_label": []
+                }
+              ]
+            },
+            {
+              "total": 43,
+              "counterpart_category": "biolink:PhenotypicFeature",
+              "associations": [
+                ... (as above)
+              ]
+            }
+          ]
+        },
+        {
+          "entity": "HP:0000973",
+          "entity_name": "Cutis laxa (HPO)",
+          ... (as above)
+          
+          "associated_categories": [
+            {
+              "total": 75,
+              "counterpart_category": "biolink:Gene",
+              "associations": [
+                ... (as above)
+              ]
+            },
+            {
+              "total": 3,
+              "counterpart_category": "biolink:PhenotypicFeature",
+              "associations": [
+                ... (as above)
+              ]
+            }
+          ]
+        }
+    ]
+}
